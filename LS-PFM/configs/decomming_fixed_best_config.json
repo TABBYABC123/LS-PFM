@@ -1,0 +1,26 @@
+{
+  "schema_version": "fixed_best_single_config_v1",
+  "preset": "decomming",
+  "config_name": "decommission_best_adjusted",
+  "config": {
+    "candidate": "flow_minus_topo_rough",
+    "weights": {
+      "flow_score": 1.0,
+      "topo_rough_score": -1.0
+    },
+    "score_norm": "robust_z",
+    "smooth_window": 5,
+    "threshold_mode": "quantile",
+    "threshold_quantile": 0.915,
+    "min_anomaly_run": 1,
+    "event_peak_mode": "nms",
+    "event_peak_radius": 15,
+    "reference_adjusted_metrics": {
+      "f1": 0.8048780487804879,
+      "precision": 0.792,
+      "recall": 0.8181818181818182,
+      "fp": 26,
+      "threshold_used": 0.29698543308972053
+    }
+  }
+}

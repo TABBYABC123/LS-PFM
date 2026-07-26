@@ -1,0 +1,119 @@
+{
+  "preset": "all",
+  "canonical_presets": [
+    "shielding",
+    "decomming"
+  ],
+  "results": {
+    "shielding": {
+      "candidate": "proto_dist_minus_topo_rough",
+      "weights": {
+        "proto_dist_score": 1.0,
+        "topo_rough_score": -1.0
+      },
+      "score_norm": "robust_z",
+      "smooth_window": 5,
+      "threshold_mode": "quantile",
+      "threshold_quantile": 0.765,
+      "min_anomaly_run": 6,
+      "event_peak_mode": "nms",
+      "event_peak_radius": 12,
+      "reference_adjusted_metrics": {
+        "f1": 0.7333333333333335,
+        "precision": 0.6644295302013423,
+        "recall": 0.8181818181818182,
+        "fp": 50,
+        "threshold_used": 0.09196410590400789
+      },
+      "config_name": "original_best_adjusted",
+      "threshold_used": 0.09196410590432402,
+      "threshold_mode_used": "quantile",
+      "adjusted": {
+        "precision": 0.6644295302013423,
+        "recall": 0.8181818181818182,
+        "f1": 0.7333333333333335,
+        "tp": 99,
+        "tn": 3371,
+        "fp": 50,
+        "fn": 22,
+        "false_alarm_rate": 0.014615609470914937,
+        "accuracy": 0.9796725014116319,
+        "latency": 5.777777777777778
+      },
+      "adjusted_f1": 0.7333333333333335,
+      "adjusted_precision": 0.6644295302013423,
+      "adjusted_recall": 0.8181818181818182,
+      "adjusted_fp": 50,
+      "adjusted_fn": 22,
+      "adjusted_latency": 5.777777777777778,
+      "output_csv": "D:\\rootfile3\\mpfm\\mpfm_gwnm_full_runnable_v5_diagnosis\\mpfm_gwnm_full_runnable_v5_sample\\mpfm_cluster3_repro_clean\\mpfm_cluster3_github_clean\\outputs\\test_fixed_best\\shielding\\cluster1_original_original_best_adjusted_scores.csv",
+      "run_info": {
+        "checkpoint": "D:\\rootfile3\\mpfm\\mpfm_gwnm_full_runnable_v5_diagnosis\\mpfm_gwnm_full_runnable_v5_sample\\mpfm_cluster3_repro_clean\\mpfm_cluster3_github_clean\\checkpoints\\best.pt",
+        "preset": "shielding",
+        "test_csv": "D:\\rootfile3\\mpfm\\mpfm_gwnm_full_runnable_v5_diagnosis\\mpfm_gwnm_full_runnable_v5_sample\\mpfm_cluster3_repro_clean\\mpfm_cluster3_github_clean\\data\\cluster1\\RRC_ConnMean_cluster1_test.csv",
+        "target_train_csv": "D:\\rootfile3\\mpfm\\mpfm_gwnm_full_runnable_v5_diagnosis\\mpfm_gwnm_full_runnable_v5_sample\\mpfm_cluster3_repro_clean\\mpfm_cluster3_github_clean\\data\\cluster1\\RRC_ConnMean_cluster1_train.csv",
+        "target_adj_csv": "D:\\rootfile3\\mpfm\\mpfm_gwnm_full_runnable_v5_diagnosis\\mpfm_gwnm_full_runnable_v5_sample\\mpfm_cluster3_repro_clean\\mpfm_cluster3_github_clean\\data\\cluster1\\cluster1_adj.csv",
+        "rows": 3542,
+        "label_positive_points": 121,
+        "base_components_csv": "D:\\rootfile3\\mpfm\\mpfm_gwnm_full_runnable_v5_diagnosis\\mpfm_gwnm_full_runnable_v5_sample\\mpfm_cluster3_repro_clean\\mpfm_cluster3_github_clean\\outputs\\test_fixed_best\\shielding\\cluster1_original_base_components.csv",
+        "component_source": "model_inference",
+        "config_source": "D:\\rootfile3\\mpfm\\mpfm_gwnm_full_runnable_v5_diagnosis\\mpfm_gwnm_full_runnable_v5_sample\\mpfm_cluster3_repro_clean\\mpfm_cluster3_github_clean\\configs\\shielding_fixed_best_config.json"
+      }
+    },
+    "decomming": {
+      "candidate": "flow_minus_topo_rough",
+      "weights": {
+        "flow_score": 1.0,
+        "topo_rough_score": -1.0
+      },
+      "score_norm": "robust_z",
+      "smooth_window": 5,
+      "threshold_mode": "quantile",
+      "threshold_quantile": 0.915,
+      "min_anomaly_run": 1,
+      "event_peak_mode": "nms",
+      "event_peak_radius": 15,
+      "reference_adjusted_metrics": {
+        "f1": 0.8048780487804879,
+        "precision": 0.792,
+        "recall": 0.8181818181818182,
+        "fp": 26,
+        "threshold_used": 0.29698543308972053
+      },
+      "config_name": "decommission_best_adjusted",
+      "threshold_used": 0.29679924155760484,
+      "threshold_mode_used": "quantile",
+      "adjusted": {
+        "precision": 0.792,
+        "recall": 0.8181818181818182,
+        "f1": 0.8048780487804879,
+        "tp": 99,
+        "tn": 3395,
+        "fp": 26,
+        "fn": 22,
+        "false_alarm_rate": 0.007600116924875768,
+        "accuracy": 0.9864483342744212,
+        "latency": 4.888888888888889
+      },
+      "adjusted_f1": 0.8048780487804879,
+      "adjusted_precision": 0.792,
+      "adjusted_recall": 0.8181818181818182,
+      "adjusted_fp": 26,
+      "adjusted_fn": 22,
+      "adjusted_latency": 4.888888888888889,
+      "output_csv": "D:\\rootfile3\\mpfm\\mpfm_gwnm_full_runnable_v5_diagnosis\\mpfm_gwnm_full_runnable_v5_sample\\mpfm_cluster3_repro_clean\\mpfm_cluster3_github_clean\\outputs\\test_fixed_best\\decomming\\cluster1_decommission_decommission_best_adjusted_scores.csv",
+      "run_info": {
+        "checkpoint": "D:\\rootfile3\\mpfm\\mpfm_gwnm_full_runnable_v5_diagnosis\\mpfm_gwnm_full_runnable_v5_sample\\mpfm_cluster3_repro_clean\\mpfm_cluster3_github_clean\\checkpoints\\best.pt",
+        "preset": "decomming",
+        "test_csv": "D:\\rootfile3\\mpfm\\mpfm_gwnm_full_runnable_v5_diagnosis\\mpfm_gwnm_full_runnable_v5_sample\\mpfm_cluster3_repro_clean\\mpfm_cluster3_github_clean\\data\\cluster1\\RRC_ConnMean_cluster1_test_6_decommssion.csv",
+        "target_train_csv": "D:\\rootfile3\\mpfm\\mpfm_gwnm_full_runnable_v5_diagnosis\\mpfm_gwnm_full_runnable_v5_sample\\mpfm_cluster3_repro_clean\\mpfm_cluster3_github_clean\\data\\cluster1\\RRC_ConnMean_cluster1_train.csv",
+        "target_adj_csv": "D:\\rootfile3\\mpfm\\mpfm_gwnm_full_runnable_v5_diagnosis\\mpfm_gwnm_full_runnable_v5_sample\\mpfm_cluster3_repro_clean\\mpfm_cluster3_github_clean\\data\\cluster1\\cluster1_adj.csv",
+        "rows": 3542,
+        "label_positive_points": 121,
+        "base_components_csv": "D:\\rootfile3\\mpfm\\mpfm_gwnm_full_runnable_v5_diagnosis\\mpfm_gwnm_full_runnable_v5_sample\\mpfm_cluster3_repro_clean\\mpfm_cluster3_github_clean\\outputs\\test_fixed_best\\decomming\\cluster1_decommission_base_components.csv",
+        "component_source": "model_inference",
+        "config_source": "D:\\rootfile3\\mpfm\\mpfm_gwnm_full_runnable_v5_diagnosis\\mpfm_gwnm_full_runnable_v5_sample\\mpfm_cluster3_repro_clean\\mpfm_cluster3_github_clean\\configs\\decomming_fixed_best_config.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": "fixed_best_single_config_v1",
+  "preset": "shielding",
+  "config_name": "original_best_adjusted",
+  "config": {
+    "candidate": "proto_dist_minus_topo_rough",
+    "weights": {
+      "proto_dist_score": 1.0,
+      "topo_rough_score": -1.0
+    },
+    "score_norm": "robust_z",
+    "smooth_window": 5,
+    "threshold_mode": "quantile",
+    "threshold_quantile": 0.765,
+    "min_anomaly_run": 6,
+    "event_peak_mode": "nms",
+    "event_peak_radius": 12,
+    "reference_adjusted_metrics": {
+      "f1": 0.7333333333333335,
+      "precision": 0.6644295302013423,
+      "recall": 0.8181818181818182,
+      "fp": 50,
+      "threshold_used": 0.09196410590400789
+    }
+  }
+}
